@@ -1,0 +1,6 @@
+The following CSS code snippet demonstrates an issue where the expected behavior of `nth-child` selector does not work as expected when combined with other selectors.  The goal is to style every other list item starting from the second item. However, the CSS below only styles every other list item starting from the first item. This unexpected behavior can be tricky to identify and debug. 
+```css
+li:nth-child(2n+2) {
+  background-color: yellow;
+}
+```
