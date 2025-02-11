@@ -1,0 +1,7 @@
+The corrected CSS code uses a slightly different `nth-child` selector to target the intended list items.
+```css
+li:nth-child(2n):not(:first-child) {
+  background-color: yellow;
+}
+```
+This selector specifically targets all even `nth-child` items while excluding the first item using `:not(:first-child)`. This ensures that styling begins from the second list item and continues for every other subsequent item.
